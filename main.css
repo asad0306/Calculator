@@ -1,12 +1,30 @@
-:root {
-    background-color: black;
+body {
+    background-color: white;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
 }
 .heading {
 margin: 50px;
-color: white;
+color: black;
 display: flex;
 justify-content: center;
 align-items: center;
 }
 
+input {
+    margin: 10px;
+    border: solid 3px black;
+    width: 310px;
+    height: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6, 80px);
+    align-content: center;
+}
