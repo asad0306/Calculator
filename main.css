@@ -1,6 +1,12 @@
 :root {
-margin: auto;
+    background-color: black;
+    margin: auto;
+}
+.heading {
+margin: 50px;
+color: white;
 display: flex;
 justify-content: center;
 align-items: center;
 }
+
