@@ -25,6 +25,8 @@ input {
     border: solid 3px black;
     width: 310px;
     height: 40px;
+    font-size: x-large;
+    font-weight: bolder;
 }
 
 .container {
