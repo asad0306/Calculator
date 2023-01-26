@@ -20,6 +20,10 @@ button {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.AC {
+    width: 320px;
+}
+
 input {
     margin: 10px;
     border: solid 3px black;
@@ -32,6 +36,6 @@ input {
 .container {
     display: grid;
     grid-template-columns: repeat(4, 80px);
-    grid-template-rows: repeat(6, 80px);
+    grid-template-rows: repeat(5, 80px);
     align-content: center;
 }
