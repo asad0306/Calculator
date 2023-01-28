@@ -17,7 +17,7 @@ for (let i = 0; i < button.length; i++) {
         } else if (value === '+' || value === '-' || value === '*' || value === '/') {
             operator = value
             display.value = operator1 + operator + operator2
-        } else if (value === 'AC') {
+        } else if (value === 'CLEAR') {
             operator = ''
             operator1 = ''
             operator2 = ''
