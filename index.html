@@ -8,34 +8,45 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="div">
-    <h1 class="heading">CALCULATOR</h1>
-    <input type="text" id="screen">
-<div class="container"> 
-    <button class="btn">7</button>
-    <button class="btn">8</button>
-    <button class="btn">9</button>
-    <button class="btns">+</button>
-    <button class="btn">4</button>
-    <button class="btn">5</button>
-    <button class="btn">6</button>
-    <button class="btns">-</button>
-    <button class="btn">1</button>
-    <button class="btn">2</button>
-    <button class="btn">3</button>
-    <button class="btns">*</button>
-    <button class="btnt">Del</button>
-    <button class="btn">0</button>
-    <button class="btns">=</button>
-    <button class="btns">÷</button>
-    <button class="btn AC">CLEAR</button> 
-</div>
-</div>
-<footer class="end">
-    <p>
-        Made by Qais.
-    </p>
-</footer>
+   <div class="container">
+    <div class="calculator">
+        <input type="text" class="input">
+        <div class="buttons">
+            <div>
+                <button class="btn ac" onclick="allClear()">AC</button>
+                <button class="btn" onclick="del()">DEL</button>
+                <button class="btn num sign">%</button>
+                <button class="btn ac sign">/</button>
+            </div>
+            <div>
+                <button class="btn num">7</button>
+                <button class="btn num">8</button>
+                <button class="btn num">9</button>
+                <button class="btn num sign">*</button>
+            </div>
+            <div>
+                <button class="btn num">4</button>
+                <button class="btn num">5</button>
+                <button class="btn num">6</button>
+                <button class="btn num sign">-</button>
+            </div>
+            <div>
+                <button class="btn num">1</button>
+                <button class="btn num">2</button>
+                <button class="btn num">3</button>
+                <button class="btn num sign">+</button>
+            </div>
+            <div>
+                <button class="btn num">0</button>
+                <button class="btn num sign">.</button>
+                <button class="btn equal sign">=</button>
+            </div>
+        </div>
+    </div>
+    <div class="link">
+        Design by Qais <a href="">@asad0306.</a>
+    </div>
+   </div>
 </body>
 <script src="main.js"></script>
 </html>

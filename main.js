@@ -1,30 +1,26 @@
-const button = document.querySelectorAll('button');
-const display = document.getElementById('screen');
-let operator = "";
-let operator1 = "";
-let operator2 = "";
+let input = document.querySelector(".input");
+let button = document.querySelectorAll(".num");
+const equal = document.querySelector(".equal");
 
-for (let i = 0; i < button.length; i++) {
-    button[i].addEventListener('click', function() {
-        let value = this.innerHTML
-        if (value > 0 || value < 9) {
-            if (operator === "") {
-                operator1 += value
-            } else {
-                operator2 += value
-            }
-            display.value = operator1 + operator + operator2
-        } else if (value === '+' || value === '-' || value === '*' || value === '/') {
-            operator = value
-            display.value = operator1 + operator + operator2
-        } else if (value === 'CLEAR') {
-            operator = ''
-            operator1 = ''
-            operator2 = ''
-            display.value = ''
-        } else if (value === '=') {
-            let result = eval(operator1 + operator + operator2)
-            display.value = result;
-        }
-    })
+input.value = 0;
+button.forEach((button) => {
+    button.addEventListener("click", () => {
+        input.value += button.innerHTML;
+        console.log(`${button.innerHTML} and its type is ${typeof button.innerHTML}`);
+    });
+});
+
+equal.addEventListener("click", evaluate);
+
+function evaluate() {
+    input.value = eval(input.value);
+    console.log(input.value)
+}
+
+function allClear() {
+    input.value = "";
+}
+
+function del () {
+    input.value = input.value.slice(0, -1);
 }
