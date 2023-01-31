@@ -2,7 +2,7 @@ let input = document.querySelector(".input");
 let button = document.querySelectorAll(".num");
 const equal = document.querySelector(".equal");
 
-input.value = 0;
+input.value = '';
 button.forEach((button) => {
     button.addEventListener("click", () => {
         input.value += button.innerHTML;
